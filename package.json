@@ -1,39 +1,23 @@
 {
-  "name": "@igorskyflyer/{{pkg}}",
+  "name": "@igorskyflyer/prettier-config",
   "version": "1.0.0",
-  "description": "{{desc}}",
+  "description": "💅🏼 Prettier config for JS/TS projects. Single quotes, no semis, LF, no trailing commas. 💄",
   "type": "module",
   "sideEffects": false,
-  "engines": {
-    "node": ">=24.0"
-  },
-  "exports": {
-    ".": {
-      "import": "./dist/index.js",
-      "types": "./dist/index.d.ts"
-    }
-  },
-  "main": "./dist/index.js",
-  "module": "./dist/index.js",
-  "types": "./dist/index.d.ts",
+  "exports": "./prettier.config.mjs",
   "files": [
-    "dist/**/*.js",
-    "dist/**/*.d.ts"
+    "./prettier.config.mjs"
   ],
   "scripts": {
-    "build": "tsc",
-    "test": "vitest --run --passWithNoTests",
-    "pub": "pnpm test && pnpm build && git push origin main --tags"
+    "pub": "git push origin main --tags"
   },
-  "dependencies": {},
-  "peerDependencies": {},
+  "peerDependencies": {
+    "prettier": "^3.8.1"
+  },
   "devDependencies": {
-    "@biomejs/biome": "^2.4.9",
-    "@igorskyflyer/biome-config": "^2.3.0",
+    "prettier": "^3.8.1",
     "@igorskyflyer/tsconfig": "^1.0.2",
-    "@types/node": "^24.12.0",
-    "typescript": "^6.0.2",
-    "vitest": "^4.1.2"
+    "typescript": "^6.0.2"
   },
   "packageManager": "pnpm@10.33.0",
   "private": false,
@@ -43,16 +27,26 @@
   "license": "MIT",
   "author": "Igor Dimitrijević <support@igorskyflyer.me> (https://github.com/igorskyflyer)",
   "funding": "https://ko-fi.com/igorskyflyer",
-  "homepage": "https://github.com/igorskyflyer/{{repo}}",
+  "homepage": "https://github.com/igorskyflyer/npm-prettier-config",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/igorskyflyer/{{repo}}.git"
+    "url": "git+https://github.com/igorskyflyer/npm-prettier-config.git"
   },
   "bugs": {
-    "url": "https://github.com/igorskyflyer/{{repo}}/issues"
+    "url": "https://github.com/igorskyflyer/npm-prettier-config/issues"
   },
   "keywords": [
-    "{{tags}}",
+    "prettier",
+    "format",
+    "formatter",
+    "code",
+    "style",
+    "spacing",
+    "line-ending",
+    "print-width",
+    "tabs",
+    "spaces",
+    "dx",
     "igor dimitrijević",
     "igorskyflyer"
   ]
