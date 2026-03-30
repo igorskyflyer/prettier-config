@@ -59,8 +59,10 @@ npm i -D @igorskyflyer/prettier-config
 
 <br>
 
-Then, reference it in the `package.json`:
-```jsonc
+Then, reference it in the **package.json**:
+
+`package.json`
+```json
 {
   "prettier": "@igorskyflyer/prettier-config"
 }
@@ -68,7 +70,9 @@ Then, reference it in the `package.json`:
 
 <br>
 
-If overrides are needed, use a `prettier.config.mjs` instead:
+If overrides are needed, use a **prettier.config.mjs** instead:
+
+`prettier.config.mjs`
 ```js
 import config from '@igorskyflyer/prettier-config'
 
